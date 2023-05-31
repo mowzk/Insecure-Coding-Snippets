@@ -1,0 +1,9 @@
+In the Chrome Extensions security guide detailed here (https://developer.chrome.com/docs/extensions/mv3/security/#sanitize), 
+appears the following sanitizeInput() function used to sanitize user data embedded in HTML documents:
+
+function sanitizeInput(input) {
+    return input.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/"/g, '&quot;');
+}
+
+1. Can this be a suitable sanitizer for question1?
+2. Can you give an example where this can be bypassed? (you can use question1.js and modify it)
